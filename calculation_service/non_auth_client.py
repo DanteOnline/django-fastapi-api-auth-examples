@@ -10,7 +10,7 @@ print('RANDOM EXPRESSION:', expression)
 
 url = 'http://127.0.0.1:8000/api/calculate/'
 
-# Интересно, что в Django работает с data
+# Интересно, что Django работает с data, а FastAPI только с json
 response = requests.post(url, json={
     'expression': expression
 })

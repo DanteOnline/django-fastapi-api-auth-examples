@@ -1,7 +1,9 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from calculations.calculate import calculate
 from calculations.expression import get_random_expression
+from auth import get_current_user
+
 
 app = FastAPI()
 
@@ -11,7 +13,8 @@ class ExpressionRequest(BaseModel):
 
 
 @app.post("/api/calculate/")
-def calculate_api_view(payload: ExpressionRequest):
+def calculate_api_view(payload: ExpressionRequest, current_user: str = Depends(get_current_user)):
+    print(current_user)
     try:
         result = calculate(payload.expression)
         return {"result": result}
@@ -20,6 +23,7 @@ def calculate_api_view(payload: ExpressionRequest):
 
 
 @app.get("/api/random-expression/")
-def random_expression_api_view():
+def random_expression_api_view(current_user: str = Depends(get_current_user)):
+    print(current_user)
     expression = get_random_expression()
     return {"expression": expression}

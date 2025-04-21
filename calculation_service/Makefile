@@ -1,5 +1,4 @@
-run:
+run8000:
 	uvicorn api:app --reload
-
-test:
-	pytest
+run:
+	uvicorn api:app --reload --port 8001
