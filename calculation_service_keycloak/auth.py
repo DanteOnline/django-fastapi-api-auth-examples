@@ -10,7 +10,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="http://localhost:8080/realms/mast
 # Это нужно будет заранее скопировать из keycloak -> Realm Settings -> Keys -> RS256 -> Public Key
 PUBLIC_KEY = """
 -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA42TKT9XjVLkZvebWzToaeMbPlRE7QVQFpvJA5bnsuVz2vfyajdLl6s2p52tM+i4veDP15pxGO7lzwOwXcsWtahGwMSO9bX2jNZpPoaSpKlcVKYT/CKI98346NyzwqcIlO514i8320SYKfb2GIq47FDzZXl0klEp9FpIeb9ENr1qXXvahKqX30xHDJAP5Ezx4w7LXRp2M3E/Hrg/JaYAsNcpgCKxx1w92sXqPKmyR5dBo+UxRSh/RjhpbgfEkmgLOf+svDJ2Fn7/zl5ULrxcuOaxpdR8xzBIwefFm3fBusxTlBPdDJt7EmXMNsi5ogBbt/CPidAzXnVsHTgEkANgV8QIDAQAB
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzPC3tU/Q3peGcjkcWcgj1+H46GGj8pdk6GBqHgsKIkHXrcBn2KcytZSN4ECB2z82kA2W7XFPZSqY0RvysexGBfoUPOBAO3kCOPwuESgSvHJUlIueZERpsbrFQ9Bc2oa33emmSlbE9IfUWg4ahMO/LTkTbfgOHxxdHGM46kOEWANHsdqstu5fiAloUPE7bLbHjsOgtNJcybaHwMsLQzGr+kyjTe76bty7FgUbPHAmN/D0GwKwT/zXevMgcOYtzA2ivUJEO8LXxTfZp5taAJqxhsjch4EJ6HmCLuDEduyiuhvrGB9bRyyv6SkT4hj1bCareANXAFl6NhYeLgV1/NEinQIDAQAB
 -----END PUBLIC KEY-----
 """
 
